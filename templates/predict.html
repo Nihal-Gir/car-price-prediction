@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+    
+        <title>Predict Car Price</title>
+        <link rel="stylesheet" href={{ url_for('static', filename='predict.css') }}>  
+    
+    </head>
+    
+    <body>
+
+        <h1> Predicting the Price of the Car</h1>
+        
+        <h3>{{ prediction_text }}</h3>
+
+        <form action = "{{ url_for('price') }}", method = 'POST'>
+            
+            <label>Year</label>
+            <p><input class = 'input' name = 'year' required = 'required'></p>
+            
+            <label>What is the Present Showroom Price? (In Lakhs INR)</label>
+            <p><input class = 'input' name = 'present_price' required = 'required'></p>
+            <label>How many KMS has the car been driven?</label>
+            <p><input class = 'input' name = 'kms' required = 'required'></p>
+            
+
+            <label>How many Previous Owners does the car have?(0 or 1 or 3)</label>
+            <p><input class = 'input' name = 'owners' required = 'required'></p>
+
+            <label>What is the Fuel Type?</label>
+            <p>
+                <select name = 'fuel_type' required = 'required'>
+                    <option value = 'Petrol'>Petrol</option>
+                    <option value = Diesel>Diesel</option>
+                    <option value = 'CNG'>CNG</option>
+                </select>
+
+            </p>
+
+            <label>Which type of Seller are you?</label>
+            <p>
+                <select name = 'seller' required = 'required'>
+                    <option value = 'individual'>Individual</option>
+                    <option value = 'dealer'>Dealer</option>
+                </select>
+            </p>
+
+            <label>What is the Transmission type of the car?</label>
+            <p>
+                <select name = 'Transmission' required = 'required'>
+                    <option value = 'manual'>Manual</option>
+                    <option value = 'automatic'>Automatic</option>
+                </select>
+            </p>
+
+            <p><input class = 'button' type = 'submit' value = 'Predict'></p>
+
+        </form>
+    <!--
+        <style>
+            h1{
+                margin: 0em;
+                padding: 0.5em;
+            }
+            h3{
+                color: rgb(26, 112, 194);
+                text-transform: uppercase;
+                font-size: 2em;
+                font-size: bold;
+            }
+            form{
+                padding:.5em;
+            }
+            p{
+                margin: 1em 1em 2em 1em;
+            }
+            body{
+                    text-align: center;
+                    background: #f2f2f2;
+                    color: black;
+            }
+            label{
+                font-size: 1.25em;
+            }
+            .input{
+                padding: .5em;
+                width:15%;
+                border-radius: 15px;
+            }
+            select{
+                padding: 1em 1em;
+                border-radius: 10px;
+            }
+            .button{
+                margin-top: .5em;
+                padding: 0.25em 1.5em;
+                background: blue;
+                color: white;
+                border: 5px solid blue;
+                border-radius: 10px;
+                font-size: 1.2em;
+            }
+            .button:hover{
+                    cursor: pointer;
+                }
+        </style>        
+    -->
+    </body>
+
+</html>
+

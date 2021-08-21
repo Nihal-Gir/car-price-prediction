@@ -1,0 +1,45 @@
+h1{
+    margin: 0em;
+    padding: 0.5em;
+}
+h3{
+    color: rgb(26, 112, 194);
+    text-transform: uppercase;
+    font-size: 2em;
+    font-size: bold;
+}
+form{
+    padding:.5em;
+}
+p{
+    margin: 1em 1em 2em 1em;
+}
+body{
+        text-align: center;
+        background: #f2f2f2;
+        color: black;
+}
+label{
+    font-size: 1.25em;
+}
+.input{
+    padding: .5em;
+    width:15%;
+    border-radius: 15px;
+}
+select{
+    padding: 1em 1em;
+    border-radius: 10px;
+}
+.button{
+    margin-top: .5em;
+    padding: 0.25em 1.5em;
+    background: blue;
+    color: white;
+    border: 5px solid blue;
+    border-radius: 10px;
+    font-size: 1.2em;
+    &:hover{
+        cursor: pointer;
+    }
+}

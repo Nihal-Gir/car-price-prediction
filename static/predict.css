@@ -1,0 +1,48 @@
+h1 {
+  padding: 0.5em;
+  margin: 0em;
+}
+
+form {
+  padding: .5em;
+}
+
+p {
+  margin: 1em 1em 2em 1em;
+}
+
+body {
+  text-align: center;
+  background: #f2f2f2;
+  color: black;
+}
+
+label {
+  font-size: 1.25em;
+}
+
+.input {
+  padding: .5em;
+  width: 15%;
+  border-radius: 15px;
+}
+
+select {
+  padding: 1em 1em;
+  border-radius: 10px;
+}
+
+.button {
+  margin-top: .5em;
+  padding: 0.5em 2em;
+  background: blue;
+  color: white;
+  border: 2px solid blue;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=predict.css.map */
